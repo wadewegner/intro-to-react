@@ -26,9 +26,7 @@ class abcrn extends Component {
           onPress={() => this.setState({selectedTab: "peopleTab"})}
           iconName="organization">
 
-            <AppNavigator 
-              initialRoute={{ident: "PeopleIndex"}}
-            />
+            <AppNavigator initialRoute={{ident: "PeopleIndex"}} />
 
         </Octicons.TabBarItemIOS>
 
@@ -38,9 +36,7 @@ class abcrn extends Component {
           onPress={() => this.setState({selectedTab: "settingsTab"})}
           iconName="gear">
 
-            <AppNavigator 
-              initialRoute={{ident: "Settings"}}
-            />
+            <AppNavigator initialRoute={{ident: "Settings"}} />
 
         </EvilIcons.TabBarItemIOS>
 

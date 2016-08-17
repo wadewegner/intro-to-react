@@ -1,7 +1,7 @@
 'use strict';
 
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
 import ViewContainer from '../components/ViewContainer'
 
 class SettingsScreen extends Component {
@@ -13,6 +13,8 @@ class SettingsScreen extends Component {
     return (
       <ViewContainer
         screenTitle="SETTINGS">
+
+        <Text>Not yet implemented.</Text>
 
       </ViewContainer>
     );

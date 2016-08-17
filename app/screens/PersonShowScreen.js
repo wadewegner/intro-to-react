@@ -22,6 +22,8 @@ class PeopleShowScreen extends Component {
         screenTitle="PERSON">
 
         <Text style={styles.personName}>{`${_.capitalize(this.state.person.firstName)} ${_.capitalize(this.state.person.lastName)}`}</Text>
+
+        <Text>{this.state.person.age} years old</Text>
         
       </ViewContainer>
     );
