@@ -11,7 +11,7 @@ class abcrn extends Component {
     super(props)
 
     this.state = {
-      selectedTab: "tab1"
+      selectedTab: "peopleTab"
     }
   }
 
@@ -22,9 +22,9 @@ class abcrn extends Component {
         selectedTab={this.state.selectedTab}>
       
       <Icon.TabBarItemIOS
-        selected={this.state.selectedTab === "tab1"}
+        selected={this.state.selectedTab === "peopleTab"}
         title={`PEOPLE`}
-        onPress={() => this.setState({selectedTab: "tab1"})}
+        onPress={() => this.setState({selectedTab: "peopleTab"})}
         iconName="organization">
 
           <AppNavigator 
@@ -34,9 +34,9 @@ class abcrn extends Component {
       </Icon.TabBarItemIOS>
 
       <Icon2.TabBarItemIOS
-        selected={this.state.selectedTab === "tab3"}
+        selected={this.state.selectedTab === "settingsTab"}
         title={`SETTINGS`}
-        onPress={() => this.setState({selectedTab: "tab3"})}
+        onPress={() => this.setState({selectedTab: "settingsTab"})}
         iconName="gear">
 
           <AppNavigator 

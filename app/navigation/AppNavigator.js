@@ -1,7 +1,7 @@
 'use strict';
 
 import React, { Component } from 'react';
-import { AppRegistry, Navigator, StyleSheet } from 'react-native';
+import { Navigator, StyleSheet } from 'react-native';
 import PeopleIndexScreen from '../screens/PeopleIndexScreen'
 import PersonShowScreen from '../screens/PersonShowScreen'
 import SettingsScreen from '../screens/SettingsScreen'
