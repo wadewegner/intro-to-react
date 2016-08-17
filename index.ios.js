@@ -1,7 +1,9 @@
+'use strict';
+
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, TabBarIOS } from 'react-native';
 import AppNavigator from './app/navigation/AppNavigator'
-import Icon from 'react-native-vector-icons/FontAwesome'
+import Icon from 'react-native-vector-icons/Octicons'
 import Icon2 from 'react-native-vector-icons/EvilIcons'
 
 class abcrn extends Component {
@@ -21,9 +23,9 @@ class abcrn extends Component {
       
       <Icon.TabBarItemIOS
         selected={this.state.selectedTab === "tab1"}
-        title={`TAB 1`}
+        title={`PEOPLE`}
         onPress={() => this.setState({selectedTab: "tab1"})}
-        iconName="user">
+        iconName="organization">
 
           <AppNavigator 
             initialRoute={{ident: "PeopleIndex"}}
@@ -31,28 +33,14 @@ class abcrn extends Component {
 
       </Icon.TabBarItemIOS>
 
-      <Icon.TabBarItemIOS
-        selected={this.state.selectedTab === "tab2"}
-        title={`TAB 2`}
-        onPress={() => this.setState({selectedTab: "tab2"})}
-        iconName="warning">
-
-          <AppNavigator 
-            initialRoute={{ident: "PersonShow",
-                           person: {firstName: "berkeley", lastName: "wanner", roomNumber: 8}}}
-          />
-
-      </Icon.TabBarItemIOS>
-
       <Icon2.TabBarItemIOS
         selected={this.state.selectedTab === "tab3"}
-        title={`TAB 3`}
+        title={`SETTINGS`}
         onPress={() => this.setState({selectedTab: "tab3"})}
-        iconName="bell">
+        iconName="gear">
 
           <AppNavigator 
-            initialRoute={{ident: "PersonShow",
-                           person: {firstName: "will", lastName: "piers", roomNumber: 14}}}
+            initialRoute={{ident: "Settings"}}
           />
 
       </Icon2.TabBarItemIOS>

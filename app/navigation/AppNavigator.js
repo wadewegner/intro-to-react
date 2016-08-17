@@ -1,13 +1,15 @@
+'use strict';
+
 import React, { Component } from 'react';
 import { AppRegistry, Navigator, StyleSheet } from 'react-native';
 import PeopleIndexScreen from '../screens/PeopleIndexScreen'
 import PersonShowScreen from '../screens/PersonShowScreen'
+import SettingsScreen from '../screens/SettingsScreen'
 
 class AppNavigator extends Component {
 
 _renderScene(route, navigator) {
   var globalNavigatorProps = { navigator }
-
   switch(route.ident) {
     case "PeopleIndex":
       return (
@@ -15,7 +17,11 @@ _renderScene(route, navigator) {
       )
     case "PersonShow":
       return (
-        <PersonShowScreen {...globalNavigatorProps} person={route.person} />
+        <PersonShowScreen {...globalNavigatorProps} id={route.id} />
+      )
+    case "Settings":
+      return (
+        <SettingsScreen {...globalNavigatorProps} />
       )
     default:
       return (
